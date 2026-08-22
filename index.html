@@ -1,0 +1,3490 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YVRIDIO'09 — Satu Kelas, Satu Orbit</title>
+
+  <meta name="description" content="YVRIDIO'09 — satu kelas, satu orbit, satu cerita. Kenangan, anggota, dan perjalanan yang tak akan hilang.">
+  <meta name="theme-color" content="#020617">
+  <meta name="author" content="YVRIDIO'09">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YVRIDIO'09">
+  <meta property="og:title" content="YVRIDIO'09 — Satu Kelas, Satu Orbit">
+  <meta property="og:description" content="One class. One orbit. One story. Kumpulan kenangan dan perjalanan YVRIDIO'09.">
+  <meta property="og:image" content="https://yvridio-09-website-2-0.vercel.app/assets/images/kenangan/foto%20kelas%201.webp">
+  <meta property="og:image:alt" content="Kenangan kelas YVRIDIO'09">
+  <meta property="og:url" content="https://yvridio-09-website-2-0.vercel.app/">
+  <link rel="canonical" href="https://yvridio-09-website-2-0.vercel.app/">
+  <meta property="og:locale" content="id_ID">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YVRIDIO'09 — Satu Kelas, Satu Orbit">
+  <meta name="twitter:description" content="One class. One orbit. One story. Kumpulan kenangan dan perjalanan YVRIDIO'09.">
+  <meta name="twitter:image" content="https://yvridio-09-website-2-0.vercel.app/assets/images/kenangan/foto%20kelas%201.webp">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+  <!-- ========================================= -->
+  <!-- LOADING SCREEN -->
+  <!-- ========================================= -->
+
+  <div id="loading-screen">
+
+    <div class="loading-stars"></div>
+    <div class="loading-nebula"></div>
+    <div class="loading-vignette"></div>
+
+    <div class="loading-content">
+
+      <div class="loading-orbit-wrap" id="loadingOrbitWrap">
+        <div class="loading-ring loading-ring-outer"></div>
+        <div class="loading-ring loading-ring-mid"></div>
+        <div class="loading-particle-field" id="loadingParticles">
+        <span class="loading-particle" data-i="0"></span>
+        <span class="loading-particle" data-i="1"></span>
+        <span class="loading-particle" data-i="2"></span>
+        <span class="loading-particle" data-i="3"></span>
+        <span class="loading-particle" data-i="4"></span>
+        <span class="loading-particle" data-i="5"></span>
+        <span class="loading-particle" data-i="6"></span>
+        <span class="loading-particle" data-i="7"></span>
+        <span class="loading-particle" data-i="8"></span>
+        <span class="loading-particle" data-i="9"></span>
+        <span class="loading-particle" data-i="10"></span>
+        <span class="loading-particle" data-i="11"></span>
+        <span class="loading-particle" data-i="12"></span>
+        <span class="loading-particle" data-i="13"></span>
+        <span class="loading-particle" data-i="14"></span>
+        <span class="loading-particle" data-i="15"></span>
+        <span class="loading-particle" data-i="16"></span>
+        <span class="loading-particle" data-i="17"></span>
+        <span class="loading-particle" data-i="18"></span>
+        <span class="loading-particle" data-i="19"></span>
+        <span class="loading-particle" data-i="20"></span>
+        <span class="loading-particle" data-i="21"></span>
+        <span class="loading-particle" data-i="22"></span>
+        <span class="loading-particle" data-i="23"></span>
+        </div>
+        <div class="loading-orbit">
+          <div class="loading-planet" id="loadingPlanet"></div>
+          <div class="loading-satellite"></div>
+          <div class="loading-satellite loading-satellite-2"></div>
+        </div>
+      </div>
+
+      <div class="loading-title">
+        YVRIDIO'09
+      </div>
+
+      <div class="loading-subtitle">
+        ONE CLASS. ONE ORBIT. ONE STORY.
+      </div>
+
+      <div class="loading-progress">
+        <div class="loading-progress-bar" id="loadingProgressBar"></div>
+      </div>
+
+      <div class="loading-percent" id="loadingPercent">0%</div>
+
+      <div class="loading-status" id="loadingStatus">
+        MEMULAI ORBIT...
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- KENANGAN WARP TRANSITION -->
+  <!-- ========================================= -->
+
+  <div id="kenangan-warp" aria-hidden="true">
+
+    <div class="warp-stars"></div>
+    <div class="warp-tunnel"></div>
+    <div class="warp-streaks"></div>
+
+    <div class="warp-content">
+
+      <div class="warp-ring">
+        <div class="warp-core"></div>
+      </div>
+
+      <div class="warp-title">
+        MENEMBUS RUANG &amp; WAKTU
+      </div>
+
+      <div class="warp-subtitle">
+        MENYUSURI JEJAK KENANGAN YVRIDIO'09
+      </div>
+
+      <div class="warp-progress">
+        <div class="warp-progress-bar" id="warpProgressBar"></div>
+      </div>
+
+      <div class="warp-status" id="warpStatus">
+        MEMBUKA PORTAL...
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================= -->
+
+  <div class="stars"></div>
+  <div class="stars2"></div>
+
+
+  <!-- ========================================= -->
+  <!-- NAVIGATION -->
+  <!-- ========================================= -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <h1 class="nav-logo">
+        <img src="assets/images/favicon.png" alt="Logo YVRIDIO">
+        <span>YVRIDIO'09</span>
+      </h1>
+
+      <button
+        class="hamburger"
+        id="menuButton"
+        onclick="toggleMenu()"
+        aria-label="Buka menu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ========================================= -->
+  <!-- MENU OVERLAY -->
+  <!-- ========================================= -->
+
+  <div
+    class="menu-overlay"
+    id="menuOverlay"
+    onclick="closeMenu()"
+  ></div>
+
+
+  <!-- ========================================= -->
+  <!-- SIDE MENU -->
+  <!-- ========================================= -->
+
+  <aside
+    class="side-menu"
+    id="sideMenu"
+  >
+
+    <div class="side-menu-header">
+
+      <div>
+
+        <span class="menu-label">
+          NAVIGATION
+        </span>
+
+        <h2>
+          YVRIDIO'09
+        </h2>
+
+      </div>
+
+      <button
+        class="close-menu"
+        onclick="closeMenu()"
+      >
+        ✕
+      </button>
+
+    </div>
+
+
+    <div class="menu-line"></div>
+
+
+    <div class="side-menu-links">
+
+      <a
+        href="#"
+        onclick="showPage('home'); closeMenu();"
+      >
+
+        <span class="menu-icon">
+          🚀
+        </span>
+
+        <div>
+
+          <strong>
+            Beranda
+          </strong>
+
+          <small>
+            Tempat semuanya dimulai
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="#"
+        onclick="showPage('struktur'); closeMenu();"
+      >
+
+        <span class="menu-icon">
+          👔
+        </span>
+
+        <div>
+
+          <strong>
+            Struktur
+          </strong>
+
+          <small>
+            Orang-orang di balik kelas
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="#"
+        onclick="showPage('anggota'); closeMenu();"
+      >
+
+        <span class="menu-icon">
+          👨🏻‍🎓
+        </span>
+
+        <div>
+
+          <strong>
+            Anggota
+          </strong>
+
+          <small>
+            Para penghuni orbit
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="#"
+        onclick="showPage('galeri'); closeMenu();"
+      >
+
+        <span class="menu-icon">
+          🌌
+        </span>
+
+        <div>
+
+          <strong>
+            Kenangan
+          </strong>
+
+          <small>
+            Potongan cerita yang tersimpan
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="#"
+        onclick="showPage('favorit'); closeMenu();"
+      >
+
+        <span class="menu-icon">
+          ✦
+        </span>
+
+        <div>
+
+          <strong>
+            Favorit
+          </strong>
+
+          <small>
+            Kenangan yang kamu tandai
+          </small>
+
+        </div>
+
+      </a>
+
+    </div>
+
+
+    <div class="side-menu-footer">
+
+      <span>
+        YVRIDIO'09
+      </span>
+
+      <p>
+        One class. One orbit. One story.
+      </p>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ========================================= -->
+  <!-- HOME -->
+  <!-- ========================================= -->
+
+  <div
+    id="home"
+    class="page active"
+  >
+
+    <section class="home-section">
+
+      <div class="home-orbit orbit-1"></div>
+      <div class="home-orbit orbit-2"></div>
+      <div class="home-orbit orbit-3"></div>
+
+
+      <div class="home-hero">
+
+        <div class="home-stars"></div>
+
+        <div class="home-content">
+
+          <span class="home-eyebrow">
+            ✦ YVRIDIO'09 • EST. 2025 ✦
+          </span>
+
+          <h2>
+            OUR LITTLE<br>
+            <span>UNIVERSE</span>
+          </h2>
+
+          <p class="home-subtitle">
+            Satu kelas, satu perjalanan,<br>
+            satu cerita yang tidak akan hilang.
+          </p>
+
+
+          <div class="home-divider">
+
+            <span>✦</span>
+
+            <div></div>
+
+            <span>✦</span>
+
+          </div>
+
+
+          <div class="home-quote">
+
+            <h3 id="quote-title">
+              Quotes of the Day
+            </h3>
+
+            <p id="random-quote">
+              Kita pernah satu orbit.
+            </p>
+
+            <span class="quote-source">
+              — YVRIDIO'09
+            </span>
+
+          </div>
+
+
+          <!-- BIRTHDAY BANNER (muncul jika ada yang ulang tahun hari ini) -->
+          <div class="home-birthday" id="homeBirthday" hidden>
+
+            <div class="birthday-glow" aria-hidden="true"></div>
+
+            <div class="birthday-label">
+              <span>✦</span>
+              HARI INI DI ORBIT
+              <span>✦</span>
+            </div>
+
+            <h3 class="birthday-title">
+              🎂 Selamat Ulang Tahun!
+            </h3>
+
+            <div class="birthday-list" id="birthdayList"></div>
+
+            <p class="birthday-note">
+              Satu orbit lagi mengelilingi matahari.
+            </p>
+
+          </div>
+
+
+          <div class="home-countdown">
+
+            <div class="countdown-label">
+
+              <span>✦</span>
+
+              MENUJU MASA DEPAN
+
+              <span>✦</span>
+
+            </div>
+
+            <h3>
+              HARI KELULUSAN
+            </h3>
+
+            <div class="countdown-time">
+
+              <span id="timer">
+                Menghitung...
+              </span>
+
+            </div>
+
+            <p>
+              The next chapter is waiting.
+            </p>
+
+          </div>
+
+
+          <div class="home-actions">
+
+            <button
+              class="home-btn primary"
+              onclick="showPage('galeri')"
+            >
+
+              <span>🌌</span>
+
+              Lihat Kenangan
+
+            </button>
+
+
+            <button
+              class="home-btn secondary"
+              onclick="showPage('anggota')"
+            >
+
+              <span>👨🏻‍🎓</span>
+
+              Kenali Anggota
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="home-info">
+
+        <div class="home-info-card">
+
+          <span class="home-info-icon">
+            👨🏻‍🎓
+          </span>
+
+          <div>
+
+            <strong>34</strong>
+
+            <span>
+              MEMBERS
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="home-info-card">
+
+          <span class="home-info-icon">
+            📸
+          </span>
+
+          <div>
+
+            <strong>287</strong>
+
+            <span>
+              MEMORIES
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="home-info-card">
+
+          <span class="home-info-icon">
+            🚀
+          </span>
+
+          <div>
+
+            <strong>1</strong>
+
+            <span>
+              CLASSROOM
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="home-social">
+
+        <span>
+          FIND US
+        </span>
+
+        <a
+          href="https://www.instagram.com/yvridio.09?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📸 @yvridio09
+        </a>
+
+        <span class="social-dot">
+          •
+        </span>
+
+        <a href="mailto:yvridio09@gmail.com">
+          📧 yvridio09@gmail.com
+        </a>
+
+      </div>
+
+
+      <div class="home-ending">
+
+        <div class="home-ending-line"></div>
+
+        <p>
+          “We were never just classmates.”
+        </p>
+
+        <span>
+          WE WERE AN ORBIT.
+        </span>
+
+        <div class="home-ending-line"></div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- STRUKTUR — NEW VERSION -->
+  <!-- ========================================= -->
+
+  <div
+    id="struktur"
+    class="page"
+  >
+
+    <section class="structure-section">
+
+
+      <!-- BACKGROUND ORBIT -->
+
+      <div class="structure-orbit structure-orbit-1"></div>
+      <div class="structure-orbit structure-orbit-2"></div>
+      <div class="structure-orbit structure-orbit-3"></div>
+
+
+      <!-- ========================================= -->
+      <!-- STRUCTURE HERO -->
+      <!-- ========================================= -->
+
+      <div class="structure-hero">
+
+        <div class="structure-stars"></div>
+
+        <div class="structure-content">
+
+          <span class="structure-eyebrow">
+            ✦ YVRIDIO'09 ORGANIZATION ✦
+          </span>
+
+
+          <h2>
+            THE PEOPLE<br>
+            <span>BEHIND OUR ORBIT</span>
+          </h2>
+
+
+          <p class="structure-subtitle">
+            Bukan sekadar struktur.<br>
+            Ini adalah orang-orang yang menjaga satu orbit tetap berjalan.
+          </p>
+
+
+          <div class="structure-divider">
+
+            <span>✦</span>
+
+            <div></div>
+
+            <span>✦</span>
+
+          </div>
+
+
+          <p class="structure-description">
+            Setiap posisi memiliki peran.
+            Setiap peran memiliki cerita.
+            Bersama-sama, mereka menjadi bagian
+            dari perjalanan YVRIDIO'09.
+          </p>
+
+
+          <!-- STRUCTURE STATS -->
+
+          <div class="structure-counter">
+
+            <div>
+
+              <strong>
+                1
+              </strong>
+
+              <span>
+                CLASS
+              </span>
+
+            </div>
+
+
+            <div class="structure-counter-line"></div>
+
+
+            <div>
+
+              <strong>
+                8
+              </strong>
+
+              <span>
+                POSITIONS
+              </span>
+
+            </div>
+
+
+            <div class="structure-counter-line"></div>
+
+
+            <div>
+
+              <strong>
+                34
+              </strong>
+
+              <span>
+                MEMBERS
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================= -->
+      <!-- ORGANIZATION -->
+      <!-- ========================================= -->
+
+      <div class="structure-organization">
+
+
+        <!-- ORGANIZATION HEADING -->
+
+        <div class="structure-heading">
+
+          <div>
+
+            <span>
+              ✦ CLASS COMMAND CENTER
+            </span>
+
+            <h3>
+              Meet the Orbit
+            </h3>
+
+            <p>
+              Orang-orang yang menggerakkan YVRIDIO'09.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- WALI KELAS -->
+        <!-- ========================================= -->
+
+        <div class="structure-center">
+
+          <div class="orbit-label">
+
+            <span>
+              01
+            </span>
+
+            CORE OF THE ORBIT
+
+          </div>
+
+
+          <div class="tree-card gold structure-main-card">
+
+            <div class="structure-card-icon">
+              ✦
+            </div>
+
+
+            <span>
+              WALI KELAS
+            </span>
+
+
+            <h4>
+              Hj. Fardiah S.Pd., M.Pd
+            </h4>
+
+
+            <p>
+              Pembimbing & penjaga perjalanan kelas
+            </p>
+
+
+            <div class="card-orbit"></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONNECTOR -->
+
+        <div class="structure-connector">
+
+          <span></span>
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- LEADERSHIP -->
+        <!-- ========================================= -->
+
+        <div class="structure-leadership">
+
+          <div class="leadership-label">
+
+            <span>
+              02
+            </span>
+
+            ORBIT LEADERS
+
+          </div>
+
+
+          <div class="leadership-grid">
+
+
+            <!-- KETUA -->
+
+            <div class="tree-card petinggi leader-card">
+
+              <div class="structure-card-number">
+                01
+              </div>
+
+
+              <div class="structure-card-icon">
+                👑
+              </div>
+
+
+              <span>
+                KETUA KELAS
+              </span>
+
+
+              <h4>
+                Muh. Aqsal Rezkyansyah
+              </h4>
+
+
+              <p>
+                Pemimpin utama YVRIDIO'09
+              </p>
+
+            </div>
+
+
+            <!-- WAKIL -->
+
+            <div class="tree-card petinggi leader-card">
+
+              <div class="structure-card-number">
+                02
+              </div>
+
+
+              <div class="structure-card-icon">
+                ✦
+              </div>
+
+
+              <span>
+                WAKIL KETUA
+              </span>
+
+
+              <h4>
+                Zafran Khairy Marwan Putra
+              </h4>
+
+
+              <p>
+                Mendampingi dan menjaga arah kelas
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONNECTOR -->
+
+        <div class="structure-connector">
+
+          <span></span>
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- CORE TEAM -->
+        <!-- ========================================= -->
+
+        <div class="structure-departments">
+
+          <div class="departments-label">
+
+            <span>
+              03
+            </span>
+
+            CORE TEAM
+
+          </div>
+
+
+          <div class="department-grid">
+
+
+            <!-- SEKRETARIS -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  📝
+                </div>
+
+                <span class="department-number">
+                  01
+                </span>
+
+              </div>
+
+
+              <span>
+                SEKRETARIS
+              </span>
+
+
+              <h4>
+                Dinda Keisha R.
+              </h4>
+
+
+              <p>
+                Andini Nur Meisya
+              </p>
+
+
+              <small>
+                Administrasi & dokumentasi kelas
+              </small>
+
+            </div>
+
+
+            <!-- BENDAHARA -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  💳
+                </div>
+
+                <span class="department-number">
+                  02
+                </span>
+
+              </div>
+
+
+              <span>
+                BENDAHARA
+              </span>
+
+
+              <h4>
+                Aqifa Ghaziya Z.
+              </h4>
+
+
+              <p>
+                Aini Akmalunisa J.
+              </p>
+
+
+              <small>
+                Mengelola keuangan kelas
+              </small>
+
+            </div>
+
+
+            <!-- PENDIDIKAN -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  📚
+                </div>
+
+                <span class="department-number">
+                  03
+                </span>
+
+              </div>
+
+
+              <span>
+                PENDIDIKAN
+              </span>
+
+
+              <h4>
+                Fazly Al-Fattah
+              </h4>
+
+
+              <small>
+                Akademik & kebutuhan pembelajaran
+              </small>
+
+            </div>
+
+
+            <!-- PUBLIKASI -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  📡
+                </div>
+
+                <span class="department-number">
+                  04
+                </span>
+
+              </div>
+
+
+              <span>
+                PUBLIKASI
+              </span>
+
+
+              <h4>
+                Ratu Nur Khumairo
+              </h4>
+
+
+              <small>
+                Informasi & dokumentasi kelas
+              </small>
+
+            </div>
+
+
+            <!-- KEAMANAN -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  🛡️
+                </div>
+
+                <span class="department-number">
+                  05
+                </span>
+
+              </div>
+
+
+              <span>
+                KEAMANAN
+              </span>
+
+
+              <h4>
+                Muh. Adnan Fabyan
+              </h4>
+
+
+              <p>
+                Gerindra Onata Osta
+              </p>
+
+
+              <small>
+                Menjaga ketertiban & keamanan
+              </small>
+
+            </div>
+
+
+            <!-- PERLENGKAPAN -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  🧰
+                </div>
+
+                <span class="department-number">
+                  06
+                </span>
+
+              </div>
+
+
+              <span>
+                PERLENGKAPAN
+              </span>
+
+
+              <h4>
+                Dzaqy Ardhani Arham
+              </h4>
+
+
+              <small>
+                Kebutuhan & perlengkapan kelas
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- ORBIT MESSAGE -->
+        <!-- ========================================= -->
+
+        <div class="structure-orbit-message">
+
+          <div class="message-orbit-ring">
+
+            <span>
+              ✦
+            </span>
+
+          </div>
+
+
+          <div class="message-content">
+
+            <span>
+              THE IDEA BEHIND IT ALL
+            </span>
+
+
+            <p>
+              “A class is not built by one person.
+              It moves because everyone plays their part.”
+            </p>
+
+
+            <strong>
+              — YVRIDIO'09
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================= -->
+      <!-- STRUCTURE ENDING -->
+      <!-- ========================================= -->
+
+      <div class="structure-ending">
+
+        <div class="structure-ending-line"></div>
+
+        <p>
+          “Behind every great story,<br>
+          there are people who make it happen.”
+        </p>
+
+        <span>
+          ONE CLASS. ONE ORBIT. ONE STORY.
+        </span>
+
+        <div class="structure-ending-line"></div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- ANGGOTA -->
+  <!-- ========================================= -->
+
+  <div
+    id="anggota"
+    class="page"
+  >
+
+    <section class="members-section">
+
+      <div class="members-orbit members-orbit-1"></div>
+      <div class="members-orbit members-orbit-2"></div>
+      <div class="members-orbit members-orbit-3"></div>
+
+
+      <div class="members-hero">
+
+        <div class="members-stars"></div>
+
+        <div class="members-content">
+
+          <span class="members-eyebrow">
+            ✦ YVRIDIO'09 CREW ✦
+          </span>
+
+          <h2>
+            THE PEOPLE<br>
+            <span>IN OUR ORBIT</span>
+          </h2>
+
+          <p class="members-subtitle">
+            34 orang, satu ruang,<br>
+            satu perjalanan yang sama.
+          </p>
+
+
+          <div class="members-divider">
+
+            <span>✦</span>
+
+            <div></div>
+
+            <span>✦</span>
+
+          </div>
+
+
+          <p class="members-description">
+            Mereka bukan sekadar nama di daftar kelas.
+            Mereka adalah orang-orang yang mengisi
+            setiap cerita, tawa, dan perjalanan
+            YVRIDIO'09.
+          </p>
+
+
+          <div class="members-counter">
+
+            <div>
+
+              <strong>
+                34
+              </strong>
+
+              <span>
+                MEMBERS
+              </span>
+
+            </div>
+
+
+            <div class="members-counter-line"></div>
+
+
+            <div>
+
+              <strong>
+                YVRIDIO'09
+              </strong>
+
+              <span>
+                ONE ORBIT
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="members-directory">
+
+        <div class="members-heading">
+
+          <div>
+
+            <span>
+              ✦ CREW DIRECTORY
+            </span>
+
+            <h3>
+              Meet the Orbit
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div class="search-wrapper">
+
+          <input
+            type="text"
+            id="searchMember"
+            placeholder="Cari nama teman..."
+            onkeyup="filterMembers()"
+          >
+
+
+          <button
+            onclick="sortMembers('az')"
+            class="btn-sort"
+            title="Urutkan A-Z"
+          >
+            🔠
+          </button>
+
+
+          <button
+            onclick="sortMembers('random')"
+            class="btn-sort"
+            title="Acak Urutan"
+          >
+            🎲
+          </button>
+
+        </div>
+
+
+        <div
+          class="anggota-grid"
+          id="memberGrid"
+        >
+
+
+          <div class="anggota-card" data-name="Zafran Khairy Marwan Putra" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/zafran.webp" alt="Zafran Khairy Marwan Putra">
+            <h4>Zafran Khairy Marwan Putra</h4>
+            <div class="bio">Zafran | Kendari, 6 Agustus 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Muhammad Khoirul Fahmi" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/khoirul.webp" alt="Muhammad Khoirul Fahmi">
+            <h4>Muhammad Khoirul Fahmi</h4>
+            <div class="bio">Fahmi | Kendari, 22 Oktober 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Gerindra Onata Osta Oswada Pracoyo" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/geri.webp" alt="Gerindra Onata Osta Oswada Pracoyo">
+            <h4>Gerindra Onata Osta Oswada Pracoyo</h4>
+            <div class="bio">Geri | Kendari, 3 Mei 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Fazly Al-Fattah Ilin" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/fazly.webp" alt="Fazly Al-Fattah Ilin">
+            <h4>Fazly Al-Fattah Ilin</h4>
+            <div class="bio">Fazly | Kendari, 8 April 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Muhammad Aqsal Rezkyansyah" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/aksal.webp" alt="Muhammad Aqsal Rezkyansyah">
+            <h4>Muhammad Aqsal Rezkyansyah</h4>
+            <div class="bio">Aksal | Kendari, 11 Januari 2010</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Nurul Islamiyah Istiqomah" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/nurull.webp" alt="Nurul Islamiyah Istiqomah">
+            <h4>Nurul Islamiyah Istiqomah</h4>
+            <div class="bio">Nurul | Kendari, 28 Mei 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Aulyana Putri" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/aul.webp" alt="Aulyana Putri">
+            <h4>Aulyana Putri</h4>
+            <div class="bio">Aul | Ulu Lalimbue, 30 November 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Aini Akmalunisa Jupri" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/aini.webp" alt="Aini Akmalunisa Jupri">
+            <h4>Aini Akmalunisa Jupri</h4>
+            <div class="bio">Aini | Kendari, 20 Juli 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Andini Nur Meisya Mastim" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/andini.webp" alt="Andini Nur Meisya Mastim">
+            <h4>Andini Nur Meisya Mastim</h4>
+            <div class="bio">Andini | Kendari, 25 Mei 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Annisa Roidah Sukanto Thayeb" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/nisa.webp" alt="Annisa Roidah Sukanto Thayeb">
+            <h4>Annisa Roidah Sukanto Thayeb</h4>
+            <div class="bio">Nisa | Kendari, 4 Maret 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Dhini Andryani" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/dhini.webp" alt="Dhini Andryani">
+            <h4>Dhini Andryani</h4>
+            <div class="bio">Dhini | Danagoa, 24 Mei 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Dinda Keisha Rohaendi" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/anonim.jpeg" alt="Dinda Keisha Rohaendi">
+            <h4>Dinda Keisha Rohaendi</h4>
+            <div class="bio">Dinda | Kendari, 5 November 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Dzakia Rafifah Artanti" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/ifah.webp" alt="Dzakia Rafifah Artanti">
+            <h4>Dzakia Rafifah Artanti</h4>
+            <div class="bio">Ifah | Kendari, 31 Mei 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Dzaqy Ardhani Arham" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/anonim.jpeg" alt="Dzaqy Ardhani Arham">
+            <h4>Dzaqy Ardhani Arham</h4>
+            <div class="bio">Dzaqy | Makassar, 18 Januari 2010</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Fauziyyah Khansa Ramadhani" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/fauziyyah.webp" alt="Fauziyyah Khansa Ramadhani">
+            <h4>Fauziyyah Khansa Ramadhani</h4>
+            <div class="bio">Fauziyyah | Kendari, 18 September 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Salsabillah Yulia Putri S" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/salsa.webp" alt="Salsabillah Yulia Putri S">
+            <h4>Salsabillah Yulia Putri S</h4>
+            <div class="bio">Salsa | Kendari, 10 Juli 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Aqifa Ghaziya Zalika" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/aqifa.webp" alt="Aqifa Ghaziya Zalika">
+            <h4>Aqifa Ghaziya Zalika</h4>
+            <div class="bio">Aqifa | Makassar, 17 Oktober 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Naizilah Rasyikah" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/naizilah.webp" alt="Naizilah Rasyikah">
+            <h4>Naizilah Rasyikah</h4>
+            <div class="bio">Naizilah | Bau-Bau, 10 Agustus 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Ghina Najla Hulwatunnisa" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/ghina.webp" alt="Ghina Najla Hulwatunnisa">
+            <h4>Ghina Najla Hulwatunnisa</h4>
+            <div class="bio">Ghina | Kendari, 11 Juli 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Isma Apriyanti" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/anonim.jpeg" alt="Isma Apriyanti">
+            <h4>Isma Apriyanti</h4>
+            <div class="bio">Isma | Kendari, 7 September 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Janita Fajriyani" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/anonim.jpeg" alt="Janita Fajriyani">
+            <h4>Janita Fajriyani</h4>
+            <div class="bio">Janita | Konawe Selatan, 4 Januari 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Keyna Noverina Isamu" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/keyna.webp" alt="Keyna Noverina Isamu">
+            <h4>Keyna Noverina Isamu</h4>
+            <div class="bio">Keyna | Kendari, 11 November 2008</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Keyla Noverila Isamu" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/keyla.webp" alt="Keyla Noverila Isamu">
+            <h4>Keyla Noverila Isamu</h4>
+            <div class="bio">Keyla | Kendari, 11 November 2008</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Laode Muhammad Rezky Izzat Pratama" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/izzat.webp" alt="Laode Muhammad Rezky Izzat Pratama">
+            <h4>Laode Muhammad Rezky Izzat Pratama</h4>
+            <div class="bio">Izzat | Kendari, 26 Desember 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Mutia Dwi Mutmainah" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/mutia.webp" alt="Mutia Dwi Mutmainah">
+            <h4>Mutia Dwi Mutmainah</h4>
+            <div class="bio">Mutia | Lumajang, 27 Maret 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Muh. Adnan Fabyan Setiawan" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/adnan.webp" alt="Muh. Adnan Fabyan Setiawan">
+            <h4>Muh. Adnan Fabyan Setiawan</h4>
+            <div class="bio">Adnan | Makassar, 9 Mei 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Izzatun Nafsy Nur Rahmi" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/izzatun.webp" alt="Izzatun Nafsy Nur Rahmi">
+            <h4>Izzatun Nafsy Nur Rahmi</h4>
+            <div class="bio">Izzatun | Kendari, 15 April 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Khalisa Nuruljannah Yusuf" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/khalisa.webp" alt="Khalisa Nuruljannah Yusuf">
+            <h4>Khalisa Nuruljannah Yusuf</h4>
+            <div class="bio">Khalisa | Kendari, 5 Juni 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Natasya Putri Ramadhani" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/natasya.webp" alt="Natasya Putri Ramadhani">
+            <h4>Natasya Putri Ramadhani</h4>
+            <div class="bio">Natasya | Kendari, 3 September 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Radisya Humairah A Labuku" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/radisya.webp" alt="Radisya Humairah A Labuku">
+            <h4>Radisya Humairah A Labuku</h4>
+            <div class="bio">Radisya | Kendari, 6 Maret 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Ratu Nur Khumairo" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/ratu.webp" alt="Ratu Nur Khumairo">
+            <h4>Ratu Nur Khumairo</h4>
+            <div class="bio">Ratu | Kendari, 31 Maret 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Andi Idham Pratama" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/anonim.jpeg" alt="Andi Idham Pratama">
+            <h4>Andi Idham Pratama</h4>
+            <div class="bio">Idham | Kendari, 3 Desember 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Iqro Saputri" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/iqro.webp" alt="Iqro Saputri">
+            <h4>Iqro Saputri</h4>
+            <div class="bio">Iqro | Kendari, 10 Juli 2009</div>
+          </div>
+
+
+          <div class="anggota-card" data-name="Raudhatul Jannah" onclick="openMemberDetail(this)" tabindex="0">
+            <img src="assets/images/anggota/raudha.webp" alt="Raudhatul Jannah">
+            <h4>Raudhatul Jannah</h4>
+            <div class="bio">Raudha | Kendari, 29 November 2009</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- MEMBER DETAIL MODAL -->
+  <!-- ========================================= -->
+
+  <div
+    id="member-detail-modal"
+    class="member-detail-modal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="member-detail-backdrop"
+      onclick="closeMemberDetail()"
+    ></div>
+
+
+    <div
+      class="member-detail-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="member-detail-name"
+    >
+
+      <button
+        class="member-detail-close"
+        onclick="closeMemberDetail()"
+        aria-label="Tutup detail anggota"
+      >
+        ✕
+      </button>
+
+
+      <div class="member-detail-orbit orbit-detail-1"></div>
+      <div class="member-detail-orbit orbit-detail-2"></div>
+
+
+      <div class="member-detail-content">
+
+        <span class="member-detail-eyebrow">
+          ✦ YVRIDIO'09 CREW MEMBER ✦
+        </span>
+
+
+        <div class="member-detail-photo-wrapper">
+
+          <div class="member-detail-photo-ring"></div>
+
+          <img
+            id="member-detail-photo"
+            src="assets/images/anggota/anonim.jpeg"
+            alt="Foto anggota"
+          >
+
+        </div>
+
+
+        <div class="member-detail-info">
+
+          <span class="member-detail-label">
+            MEMBER OF THE ORBIT
+          </span>
+
+
+          <h2 id="member-detail-name">
+            Nama Anggota
+          </h2>
+
+
+          <div class="member-detail-divider">
+
+            <span>✦</span>
+
+            <div></div>
+
+            <span>✦</span>
+
+          </div>
+
+
+          <div class="member-detail-data">
+
+            <div class="member-detail-item">
+
+              <span class="detail-icon">
+                👤
+              </span>
+
+              <div>
+
+                <small>
+                  NAMA PANGGILAN
+                </small>
+
+                <strong id="member-detail-nickname">
+                  -
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="member-detail-item">
+
+              <span class="detail-icon">
+                📍
+              </span>
+
+              <div>
+
+                <small>
+                  TEMPAT & TANGGAL LAHIR
+                </small>
+
+                <strong id="member-detail-birth">
+                  -
+                </strong>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="member-detail-message">
+
+            <span>
+              ✦
+            </span>
+
+            <p>
+              Salah satu bagian dari perjalanan
+              <strong>YVRIDIO'09</strong>.
+              Satu orang, satu cerita, satu orbit.
+            </p>
+
+            <span>
+              ✦
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- KENANGAN -->
+  <!-- ========================================= -->
+
+  <div
+    id="galeri"
+    class="page"
+  >
+
+    <section class="memory-section">
+
+      <div class="memory-hero">
+
+        <div class="memory-stars"></div>
+
+        <div class="memory-content">
+
+          <span class="memory-eyebrow">
+            ✦ YVRIDIO'09 ARCHIVE ✦
+          </span>
+
+
+          <h2>
+            ONE CLASS,<br>
+            <span>ONE ORBIT.</span>
+          </h2>
+
+
+          <p class="memory-subtitle">
+            Every picture holds a moment.<br>
+            Every moment holds a story.
+          </p>
+
+
+          <div class="memory-divider">
+
+            <span>✦</span>
+
+            <div></div>
+
+            <span>✦</span>
+
+          </div>
+
+
+          <p class="memory-description">
+            Kumpulan kecil dari perjalanan kami,
+            tawa yang pernah memenuhi satu kelas,
+            dan momen-momen sederhana yang akhirnya
+            menjadi kenangan.
+          </p>
+
+
+          <div class="memory-counter">
+
+            <div>
+
+              <strong id="memoryCount">
+                0
+              </strong>
+
+              <span>
+                MEMORIES
+              </span>
+
+            </div>
+
+
+            <div class="counter-line"></div>
+
+
+            <div>
+
+              <strong>
+                YVRIDIO'09
+              </strong>
+
+              <span>
+                ONE ORBIT
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="gallery-heading">
+
+        <div>
+
+          <span>
+            ✦ MEMORY ARCHIVE
+          </span>
+
+          <h3>
+            Fragments of Our Story
+          </h3>
+
+        </div>
+
+        <div class="gallery-actions">
+
+          <button
+            type="button"
+            class="to-favorit-btn"
+            onclick="showPage('favorit')"
+            title="Buka foto favorit"
+            aria-label="Buka favorit"
+          >
+            <span class="to-favorit-icon" aria-hidden="true">✦</span>
+            <span class="to-favorit-text">
+              <small>SAVED</small>
+              <strong>Ke Favorit</strong>
+            </span>
+          </button>
+
+          <button
+            class="shuffle-memory-btn"
+            onclick="shuffleMemories()"
+            title="Acak ulang orbit kenangan"
+            aria-label="Acak kenangan"
+          >
+            <span class="shuffle-orbit" aria-hidden="true">
+              <span class="shuffle-core"></span>
+              <span class="shuffle-sat"></span>
+            </span>
+            <span class="shuffle-text">
+              <small>RESHUFFLE</small>
+              <strong>Acak Orbit</strong>
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="galeri"
+        id="memoryGallery"
+      >
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/villa 1.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/foto kelas 1.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/pramuka.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/lapangan voli.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/gacoan sekelas.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/foto random 1.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/terima rapor.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/upacara lapangan.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/hbd bu ras.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/tido pun sodap ni.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/pizza sekelas.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/fazly turu.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/bertugas upacra 1.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+          <img src="assets/images/kenangan/foto1.webp" loading="lazy">
+        </div>
+
+        <div class="memory-card">
+  <img src="assets/images/kenangan/foto2.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto3.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto4.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto5.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto6.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto7.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto8.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto9.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto10.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto11.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto12.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto13.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto14.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto15.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto16.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto17.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto18.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto19.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto20.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto21.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto22.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto23.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto24.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto25.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto26.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto27.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto28.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto29.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto30.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto31.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto32.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto33.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto34.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto35.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto36.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto37.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto38.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto39.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto40.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto41.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto42.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto43.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto44.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto45.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto46.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto47.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto48.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto49.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto50.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto51.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto52.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto53.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto54.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto55.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto56.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto57.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto58.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto59.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto60.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto61.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto62.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto63.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto64.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto65.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto66.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto67.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto68.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto69.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto70.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto71.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto72.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto73.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto74.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto75.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto76.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto77.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto78.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto79.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto80.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto81.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto82.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto83.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto84.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto85.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto86.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto87.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto88.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto89.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto90.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto91.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto92.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto93.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto94.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto95.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto96.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto97.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto98.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto99.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto100.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto101.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto102.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto103.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto104.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto105.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto106.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto107.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto108.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto109.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto110.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto111.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto112.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto113.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto114.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto115.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto116.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto117.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto118.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto119.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto120.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto121.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto122.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto123.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto124.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto125.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto126.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto127.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto128.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto129.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto130.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto131.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto132.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto133.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto134.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto135.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto136.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto137.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto138.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto139.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto140.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto141.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto142.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto143.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto144.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto145.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto146.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto147.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto148.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto149.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto150.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto151.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto152.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto153.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto154.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto155.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto156.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto157.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto158.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto159.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto160.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto161.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto162.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto163.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto166.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto167.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto168.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto169.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto170.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto171.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto172.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto173.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto174.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto175.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto176.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto177.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto178.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto179.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto180.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto181.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto182.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto183.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto184.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto185.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto186.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto187.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto188.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto189.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto251.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto250.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto249.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto248.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto247.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto246.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto245.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto244.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto243.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto242.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto241.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto240.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto239.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto238.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto237.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto236.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto235.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto234.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto233.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto232.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto231.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto230.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto229.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto228.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto227.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto226.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto225.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto224.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto223.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto222.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto221.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto220.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto219.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto218.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto217.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto216.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto215.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto214.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto213.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto212.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto211.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto210.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto209.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto208.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto207.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto206.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto205.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto204.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto203.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto202.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto201.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto200.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto199.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto198.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto197.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto196.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto195.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto194.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto193.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto192.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto191.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto190.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto252.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto253.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto254.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto255.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto256.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto257.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto258.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto259.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto260.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto261.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto262.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto263.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto264.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto265.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto266.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto267.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto268.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto269.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto270.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto271.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto272.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto273.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto274.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto275.webp" loading="lazy">
+</div>
+<div class="memory-card">
+  <img src="assets/images/kenangan/foto276.webp" loading="lazy">
+</div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+      <div class="memory-load-more-wrap" id="memoryLoadMoreWrap">
+        <button
+          type="button"
+          class="memory-load-more-btn"
+          id="memoryLoadMoreBtn"
+          onclick="loadMoreMemories()"
+        >
+          <span class="load-more-rings" aria-hidden="true">
+            <span></span><span></span>
+          </span>
+          <span class="load-more-label">
+            <small>EXPAND ORBIT</small>
+            <strong>Muat Kenangan Lain</strong>
+          </span>
+          <span class="load-more-count" id="memoryLoadMoreCount"></span>
+        </button>
+        <p class="memory-load-status" id="memoryLoadStatus"></p>
+      </div>
+
+      <div class="memory-ending">
+
+        <div class="ending-line"></div>
+
+        <p>
+          “Some moments become memories.<br>
+          Some memories become our universe.”
+        </p>
+
+        <span>
+          — YVRIDIO'09
+        </span>
+
+        <div class="ending-line"></div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- ========================================= -->
+  <!-- FAVORIT -->
+  <!-- ========================================= -->
+
+  <div
+    id="favorit"
+    class="page"
+  >
+
+    <section class="memory-section favorit-section">
+
+      <div class="memory-hero favorit-hero">
+
+        <div class="memory-stars"></div>
+
+        <div class="memory-content">
+
+          <span class="memory-eyebrow">
+            ✦ SAVED IN ORBIT ✦
+          </span>
+
+          <h2>
+            FAVORITE<br>
+            <span>PHOTOS</span>
+          </h2>
+
+          <p class="memory-subtitle">
+            Kenangan yang kamu tandai,<br>
+            tersimpan di orbitmu sendiri.
+          </p>
+
+          <div class="memory-divider">
+            <span>✦</span>
+            <div></div>
+            <span>✦</span>
+          </div>
+
+          <div class="memory-counter">
+            <div>
+              <strong id="favoritCount">0</strong>
+              <span>FAVORITES</span>
+            </div>
+            <div class="counter-line"></div>
+            <div>
+              <strong>YVRIDIO'09</strong>
+              <span>YOUR ORBIT</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="gallery-heading">
+        <div>
+          <span>✦ FAVORITE ARCHIVE</span>
+          <h3>Your Chosen Moments</h3>
+        </div>
+</div>
+
+
+      <div
+        class="galeri favorit-galeri"
+        id="favoritGallery"
+      ></div>
+
+
+      <div
+        class="favorit-empty"
+        id="favoritEmpty"
+      >
+        <div class="favorit-empty-orbit" aria-hidden="true">
+          <span></span>
+        </div>
+        <p>Belum ada kenangan favorit.</p>
+        <span>Tandai foto di tab Kenangan dengan tombol ✦</span>
+        <button
+          type="button"
+          class="home-btn primary"
+          onclick="showPage('galeri')"
+          style="margin-top: 18px;"
+        >
+          <span>🌌</span>
+          Buka Kenangan
+        </button>
+      </div>
+
+
+      <div class="memory-ending">
+        <div class="ending-line"></div>
+        <p>
+          “The moments we keep<br>
+          become the stars we follow.”
+        </p>
+        <span>— YVRIDIO'09</span>
+        <div class="ending-line"></div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- ========================================= -->
+  <!-- PHOTO MODAL -->
+  <!-- ========================================= -->
+
+  <div id="modal">
+
+    <button
+      class="modal-close"
+      onclick="closeModal()"
+      aria-label="Tutup"
+    >
+      ✕
+    </button>
+
+
+    <button
+      class="modal-nav modal-prev"
+      onclick="previousPhoto()"
+      aria-label="Foto sebelumnya"
+    >
+      ‹
+    </button>
+
+
+    <div class="modal-content">
+
+      <img
+        id="modal-img"
+        alt="Kenangan YVRIDIO'09"
+      >
+
+
+      <div class="modal-actions">
+        <button
+          type="button"
+          class="modal-fav-btn"
+          id="modalFavBtn"
+          onclick="toggleModalFavorite()"
+          title="Tandai favorit"
+          aria-label="Tandai favorit"
+        >✦</button>
+
+        <div
+          class="modal-counter"
+          id="modal-counter"
+        >
+          1 / 262
+        </div>
+      </div>
+
+    </div>
+
+
+    <button
+      class="modal-nav modal-next"
+      onclick="nextPhoto()"
+      aria-label="Foto berikutnya"
+    >
+      ›
+    </button>
+
+  </div>
+
+
+
+  <!-- ========================================= -->
+  <!-- BACK TO TOP -->
+  <!-- ========================================= -->
+
+  <button
+    type="button"
+    id="backToTop"
+    class="back-to-top"
+    onclick="scrollToTop()"
+    title="Kembali ke atas"
+    aria-label="Kembali ke atas"
+  >
+    <span class="btt-orbit" aria-hidden="true">
+      <span class="btt-core"></span>
+    </span>
+    <span class="btt-arrow">↑</span>
+  </button>
+
+  <!-- ========================================= -->
+  <!-- MUSIC -->
+  <!-- ========================================= -->
+
+  <audio
+    id="bg-music"
+    preload="metadata"
+  ></audio>
+
+
+  <div
+    class="music-player"
+    id="musicPlayer"
+  >
+
+    <!-- MINI PLAYER (kontrol cepat) -->
+    <div class="mini-player" id="miniPlayer">
+
+      <div class="mini-player-disc" id="miniDisc">
+        <span>♫</span>
+      </div>
+
+      <div class="mini-player-info">
+        <strong id="miniTitle">Belum ada lagu</strong>
+        <span id="miniArtist">YVRIDIO'09</span>
+      </div>
+
+      <div class="mini-player-progress">
+        <input
+          type="range"
+          id="miniProgress"
+          min="0"
+          max="100"
+          value="0"
+          step="0.1"
+          aria-label="Progress lagu"
+        >
+      </div>
+
+      <div class="mini-player-controls">
+        <button
+          class="mini-ctrl"
+          onclick="previousSong()"
+          title="Lagu sebelumnya"
+          aria-label="Lagu sebelumnya"
+        >⏮</button>
+
+        <button
+          class="mini-ctrl mini-play"
+          id="miniPlayButton"
+          onclick="toggleMusic()"
+          title="Play / Pause"
+          aria-label="Play / Pause"
+        >▶</button>
+
+        <button
+          class="mini-ctrl"
+          onclick="nextSong()"
+          title="Lagu berikutnya"
+          aria-label="Lagu berikutnya"
+        >⏭</button>
+      </div>
+
+    </div>
+
+
+    <button
+      class="music-btn"
+      id="musicToggle"
+      onclick="toggleMusicPlayer()"
+      title="Music Player"
+      aria-label="Buka Music Player"
+    >
+      🎵
+    </button>
+
+
+    <div
+      class="music-panel"
+      id="musicPanel"
+    >
+
+      <div class="music-header">
+
+        <div>
+
+          <span class="music-label">
+            YVRIDIO'09 SOUNDTRACK
+          </span>
+
+          <h3>
+            PLAYLIST
+          </h3>
+
+        </div>
+
+
+        <button
+          class="music-close"
+          onclick="closeMusicPlayer()"
+          aria-label="Tutup music player"
+        >
+          ✕
+        </button>
+
+      </div>
+
+
+      <div class="music-line"></div>
+
+
+      <div class="music-now-playing panel-now-playing">
+
+        <div
+          class="music-disc"
+          id="musicDisc"
+        >
+          <span>
+            ♫
+          </span>
+        </div>
+
+        <div class="music-info">
+
+          <strong id="musicTitle">
+            Belum ada lagu
+          </strong>
+
+          <span id="musicArtist">
+            YVRIDIO'09
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="music-progress-wrapper">
+
+        <span id="musicCurrentTime">
+          0:00
+        </span>
+
+
+        <input
+          type="range"
+          id="musicProgress"
+          min="0"
+          max="100"
+          value="0"
+          step="0.1"
+          aria-label="Progress lagu"
+        >
+
+
+        <span id="musicDuration">
+          0:00
+        </span>
+
+      </div>
+
+
+      <div class="music-controls">
+
+        <button
+          onclick="previousSong()"
+          title="Lagu sebelumnya"
+          aria-label="Lagu sebelumnya"
+        >
+          ⏮
+        </button>
+
+
+        <button
+          class="music-play"
+          id="musicPlayButton"
+          onclick="toggleMusic()"
+          title="Play / Pause"
+          aria-label="Play / Pause"
+        >
+          ▶
+        </button>
+
+
+        <button
+          onclick="nextSong()"
+          title="Lagu berikutnya"
+          aria-label="Lagu berikutnya"
+        >
+          ⏭
+        </button>
+
+      </div>
+
+
+      <div class="music-volume">
+
+        <span>
+          🔊
+        </span>
+
+
+        <input
+          type="range"
+          id="musicVolume"
+          min="0"
+          max="1"
+          value="0.4"
+          step="0.01"
+          aria-label="Volume"
+        >
+
+      </div>
+
+
+      <div class="playlist-header">
+
+        <span>
+          PILIH LAGU
+        </span>
+
+        <small id="playlistCount">
+          0 SONGS
+        </small>
+
+      </div>
+
+
+      <div
+        class="music-playlist"
+        id="musicPlaylist"
+      ></div>
+
+
+      <div class="music-footer">
+
+        <span>
+          ✦ ONE CLASS. ONE ORBIT. ONE STORY.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================= -->
+
+  <footer>
+
+    <p>
+      © 2025 — Pernah satu kelas, selamanya satu cerita 🌠
+    </p>
+
+  </footer>
+
+
+  <!-- ========================================= -->
+  <!-- MEMBER DETAIL SCRIPT -->
+  <!-- ========================================= -->
+
+  <script>
+
+    function openMemberDetail(card) {
+
+      const modal =
+        document.getElementById("member-detail-modal");
+
+      const image =
+        card.querySelector("img");
+
+      const name =
+        card.querySelector("h4");
+
+      const bio =
+        card.querySelector(".bio");
+
+
+      if (!modal || !name || !bio) {
+        return;
+      }
+
+
+      const fullName =
+        name.textContent.trim();
+
+      const bioText =
+        bio.textContent.trim();
+
+
+      const parts =
+        bioText.split("|");
+
+
+      const nickname =
+        parts[0]
+          ? parts[0].trim()
+          : "-";
+
+
+      const birth =
+        parts[1]
+          ? parts[1].trim()
+          : "-";
+
+
+      document.getElementById(
+        "member-detail-photo"
+      ).src = image.src;
+
+
+      document.getElementById(
+        "member-detail-photo"
+      ).alt = fullName;
+
+
+      document.getElementById(
+        "member-detail-name"
+      ).textContent = fullName;
+
+
+      document.getElementById(
+        "member-detail-nickname"
+      ).textContent = nickname;
+
+
+      document.getElementById(
+        "member-detail-birth"
+      ).textContent = birth;
+
+
+      modal.classList.add("active");
+
+      modal.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+
+      document.body.classList.add(
+        "member-modal-open"
+      );
+
+    }
+
+
+    function closeMemberDetail() {
+
+      const modal =
+        document.getElementById(
+          "member-detail-modal"
+        );
+
+
+      if (!modal) {
+        return;
+      }
+
+
+      modal.classList.remove("active");
+
+      modal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+
+      document.body.classList.remove(
+        "member-modal-open"
+      );
+
+    }
+
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          const modal =
+            document.getElementById(
+              "member-detail-modal"
+            );
+
+
+          if (
+            modal &&
+            modal.classList.contains("active")
+          ) {
+
+            closeMemberDetail();
+
+          }
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        const card =
+          event.target.closest(
+            ".anggota-card"
+          );
+
+
+        if (!card) {
+          return;
+        }
+
+
+        if (
+          event.key === "Enter" ||
+          event.key === " "
+        ) {
+
+          event.preventDefault();
+
+          openMemberDetail(card);
+
+        }
+
+      }
+    );
+
+  </script>
+
+
+  <!-- ========================================= -->
+  <!-- MAIN JAVASCRIPT -->
+  <!-- ========================================= -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

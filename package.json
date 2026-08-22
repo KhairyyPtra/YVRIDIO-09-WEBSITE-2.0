@@ -1,0 +1,12 @@
+{
+  "name": "yvridio-09-website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "YVRIDIO'09 — One class. One orbit. One story.",
+  "scripts": {
+    "vapid": "node -e \"const w=require('web-push');console.log(JSON.stringify(w.generateVAPIDKeys(),null,2))\""
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}
