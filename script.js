@@ -2394,7 +2394,7 @@ const MONTH_MAP = {
 
 /** Data ulang tahun dari bio anggota (hari + bulan saja). */
 const MEMBER_BIRTHDAYS = [
-  { name: "Zafran Khairy Marwan Putra", nick: "Zafran", day: 6, month: 8 },
+  { name: "Zafran Khairy Marwan Putra", nick: "Zafran", day: 22, month: 8 },
   { name: "Muhammad Khoirul Fahmi", nick: "Fahmi", day: 22, month: 10 },
   { name: "Gerindra Onata Osta Oswada Pracoyo", nick: "Geri", day: 3, month: 5 },
   { name: "Fazly Al-Fattah Ilin", nick: "Fazly", day: 8, month: 4 },
