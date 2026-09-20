@@ -1,0 +1,64 @@
+#struktur.page .structure-section {
+  min-height: 100svh;
+  isolation: isolate;
+  padding-bottom: clamp(48px, 8vw, 96px);
+}
+
+#struktur.page .structure-content,
+#struktur.page .structure-organization,
+#struktur.page .structure-ending {
+  position: relative;
+  z-index: 1;
+}
+
+#struktur.page .department-grid,
+#struktur.page .leadership-grid {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  gap: 16px;
+}
+
+#struktur.page .structure-organization {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+}
+
+#struktur.page .structure-heading {
+  margin-bottom: 34px;
+}
+
+#struktur.page .structure-center,
+#struktur.page .structure-leadership,
+#struktur.page .structure-departments {
+  margin-top: 24px;
+}
+
+#struktur.page .structure-main-card {
+  width: min(100%, 360px);
+  margin-inline: auto;
+}
+
+#struktur.page .tree-card {
+  min-width: 0;
+  padding: 22px 18px;
+}
+
+#struktur.page .structure-orbit-message {
+  width: min(100%, 720px);
+  margin: 64px auto 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(16, 34, 56, 0.52);
+}
+
+@media (max-width: 720px) {
+  #struktur.page .department-grid,
+  #struktur.page .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #struktur.page .structure-connector {
+    height: 28px;
+  }
+}
