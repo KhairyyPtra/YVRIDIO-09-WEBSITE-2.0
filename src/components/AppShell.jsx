@@ -28,7 +28,9 @@ const pageTitles = {
 };
 
 export function AppShell({ activePage, children }) {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(() =>
+    typeof window !== "undefined" && window.innerWidth > 820
+  );
 
   useEffect(() => {
     document.body.classList.add("app-shell-active");
@@ -36,7 +38,9 @@ export function AppShell({ activePage, children }) {
   }, []);
 
   useEffect(() => {
-    setMenuOpen(false);
+    if (window.innerWidth <= 820) {
+      setMenuOpen(false);
+    }
   }, [activePage]);
 
   const navigate = (pageId) => {
@@ -61,14 +65,6 @@ export function AppShell({ activePage, children }) {
             <strong>YVRIDIO'09</strong>
             <span>CLASS ARCHIVE</span>
           </div>
-          <button
-            className="app-sidebar-close"
-            type="button"
-            aria-label="Tutup navigasi"
-            onClick={() => setMenuOpen(false)}
-          >
-            <X size={18} />
-          </button>
         </div>
 
         <div className="app-sidebar-rule" />
@@ -102,11 +98,11 @@ export function AppShell({ activePage, children }) {
         <button
           className="app-menu-trigger"
           type="button"
-          aria-label="Buka navigasi"
+          aria-label={menuOpen ? "Lipat navigasi" : "Buka navigasi"}
           aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(true)}
+          onClick={() => setMenuOpen((isOpen) => !isOpen)}
         >
-          <Menu size={20} />
+          {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
         <div className="app-topbar-heading">
           <span>YVRIDIO'09 / WORKSPACE</span>

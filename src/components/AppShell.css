@@ -12,10 +12,12 @@ body.app-shell-active > .menu-overlay {
 body.app-shell-active > .page {
   margin-left: 248px;
   padding-top: 72px;
+  transition: margin-left 220ms ease;
 }
 
 body.app-shell-active > footer {
   margin-left: 248px;
+  transition: margin-left 220ms ease;
 }
 
 .app-sidebar {
@@ -29,6 +31,20 @@ body.app-shell-active > footer {
   border-right: 1px solid var(--line);
   background: rgba(7, 17, 31, 0.96);
   box-shadow: 14px 0 42px rgba(0, 0, 0, 0.16);
+  transform: translateX(0);
+  transition: transform 220ms ease;
+}
+
+.app-shell:not(.menu-open) .app-sidebar {
+  transform: translateX(-102%);
+}
+
+body.app-shell-active:has(.app-shell:not(.menu-open)) > .page {
+  margin-left: 0;
+}
+
+body.app-shell-active:has(.app-shell:not(.menu-open)) > footer {
+  margin-left: 0;
 }
 
 .app-sidebar-brand {
@@ -71,9 +87,14 @@ body.app-shell-active > footer {
   font-weight: 700;
 }
 
-.app-sidebar-close,
 .app-menu-trigger {
-  display: none;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(16, 34, 56, 0.82);
+  color: var(--paper);
+  cursor: pointer;
 }
 
 .app-sidebar-rule {
@@ -202,26 +223,62 @@ body.app-shell-active > footer {
   background: rgba(7, 17, 31, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  transition: inset 220ms ease;
+}
+
+body.app-shell-active:has(.app-shell:not(.menu-open)) .app-topbar {
+  inset: 0 0 auto 0;
 }
 
 .app-topbar-heading {
+  position: relative;
   display: grid;
   min-width: 0;
-  gap: 3px;
+  gap: 4px;
+  padding-left: 15px;
+}
+
+.app-topbar-heading::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--cyan), var(--violet));
+  box-shadow: 0 0 14px rgba(141, 231, 225, 0.42);
+}
+
+.app-topbar-heading::after {
+  content: "";
+  position: absolute;
+  right: -34px;
+  bottom: -9px;
+  width: 76px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--cyan), transparent);
+  opacity: 0.7;
 }
 
 .app-topbar-heading span {
   color: var(--muted-soft);
-  font-size: 0.56rem;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: 0.58rem;
   font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .app-topbar-heading strong {
   overflow: hidden;
   color: var(--paper);
-  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -237,6 +294,12 @@ body.app-shell-active > footer {
 
 .app-shell-backdrop {
   display: none;
+}
+
+.app-menu-trigger {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
 }
 
 .app-shell-content {
@@ -267,28 +330,6 @@ body.app-shell-active > footer {
 
   .app-sidebar.is-open {
     transform: translateX(0);
-  }
-
-  .app-sidebar-close,
-  .app-menu-trigger {
-    display: grid;
-    place-items: center;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    background: rgba(16, 34, 56, 0.82);
-    color: var(--paper);
-  }
-
-  .app-sidebar-close {
-    width: 34px;
-    height: 34px;
-    margin-left: auto;
-  }
-
-  .app-menu-trigger {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 auto;
   }
 
   .app-shell-backdrop {
