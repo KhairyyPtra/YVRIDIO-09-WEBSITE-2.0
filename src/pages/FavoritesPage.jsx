@@ -1,5 +1,6 @@
+import { LegacyPageBridge } from "../components/LegacyPageBridge";
 import "./FavoritesPage.css";
 
 export function FavoritesPage({ activePage }) {
-  return <div id="favorit" className={`page${activePage === "favorit" ? " active" : ""}`}><section className="memory-section favorit-section"><div className="memory-hero favorit-hero"><div className="memory-content"><span className="memory-eyebrow">✦ TERSIMPAN UNTUKMU ✦</span><h2>Foto<br /><span>favorit.</span></h2><p className="memory-subtitle">Kenangan yang kamu tandai,<br />tersimpan di tempat pilihanmu.</p><div className="memory-divider"><span>✦</span><div /><span>✦</span></div><div className="memory-counter"><div><strong id="favoritCount">0</strong><span>FAVORIT</span></div><div className="counter-line" /><div><strong>YVRIDIO'09</strong><span>PILIHANMU</span></div></div></div></div><div className="gallery-heading"><div><span>✦ FOTO PILIHANMU</span><h3>Kenangan yang kamu pilih</h3></div></div><div id="favoritGallery" className="galeri favorit-galeri" /><div className="favorit-empty" id="favoritEmpty"><p>Belum ada kenangan favorit.</p><span>Tandai foto di tab Kenangan dengan tombol ✦</span><button type="button" className="home-btn primary" onClick={() => window.showPage?.("galeri")}>Lihat Kumpulan Kenangan</button></div></section></div>;
+  return <LegacyPageBridge pageId="favorit" activePage={activePage} />;
 }
