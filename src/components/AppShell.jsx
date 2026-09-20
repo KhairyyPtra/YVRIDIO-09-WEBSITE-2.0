@@ -13,18 +13,18 @@ import "./AppShell.css";
 
 const navigation = [
   { id: "home", label: "Beranda", description: "Ringkasan kelas", Icon: LayoutDashboard },
-  { id: "struktur", label: "Struktur", description: "Organisasi kelas", Icon: Network },
-  { id: "anggota", label: "Anggota", description: "Crew directory", Icon: Users },
-  { id: "galeri", label: "Kenangan", description: "Arsip visual", Icon: Archive },
-  { id: "favorit", label: "Favorit", description: "Pilihan tersimpan", Icon: BookOpen }
+  { id: "struktur", label: "Struktur", description: "Susunan kelas", Icon: Network },
+  { id: "anggota", label: "Anggota", description: "Teman sekelas", Icon: Users },
+  { id: "galeri", label: "Kenangan", description: "Kumpulan foto", Icon: Archive },
+  { id: "favorit", label: "Favorit", description: "Yang kamu simpan", Icon: BookOpen }
 ];
 
 const pageTitles = {
   home: "Beranda",
-  struktur: "Struktur kelas",
-  anggota: "Crew directory",
-  galeri: "Arsip kenangan",
-  favorit: "Favorit tersimpan"
+  struktur: "Susunan kelas",
+  anggota: "Teman sekelas",
+  galeri: "Kumpulan kenangan",
+  favorit: "Favoritmu"
 };
 
 export function AppShell({ activePage, children }) {
@@ -63,14 +63,14 @@ export function AppShell({ activePage, children }) {
           <img src="/assets/images/favicon.png" alt="" />
           <div>
             <strong>YVRIDIO'09</strong>
-            <span>CLASS ARCHIVE</span>
+            <span>ARSIP KELAS</span>
           </div>
         </div>
 
         <div className="app-sidebar-rule" />
-        <span className="app-sidebar-label">WORKSPACE</span>
+        <span className="app-sidebar-label">MENU UTAMA</span>
 
-        <nav className="app-sidebar-nav" aria-label="Navigasi utama">
+        <nav className="app-sidebar-nav" aria-label="Menu utama">
           {navigation.map(({ id, label, description, Icon }) => (
             <button
               className={`app-nav-item${activePage === id ? " is-active" : ""}`}
@@ -89,8 +89,8 @@ export function AppShell({ activePage, children }) {
         </nav>
 
         <div className="app-sidebar-footer">
-          <span className="app-sidebar-status"><i /> SYSTEM ONLINE</span>
-          <p>Class archive active.</p>
+          <span className="app-sidebar-status"><i /> SEMUA SIAP</span>
+          <p>Cerita kelasmu ada di sini.</p>
         </div>
       </aside>
 
@@ -105,12 +105,12 @@ export function AppShell({ activePage, children }) {
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
         <div className="app-topbar-heading">
-          <span>YVRIDIO'09 / WORKSPACE</span>
+          <span>YVRIDIO'09 / RUANG CERITA</span>
           <strong>{pageTitles[activePage] || "Beranda"}</strong>
         </div>
         <div className="app-topbar-meta">
           <span className="app-topbar-dot" />
-          <span>LIVE ARCHIVE</span>
+          <span>CERITA TERBARU</span>
         </div>
       </header>
 

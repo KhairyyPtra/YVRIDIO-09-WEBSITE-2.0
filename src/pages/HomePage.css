@@ -15,7 +15,8 @@
 #home.page .home-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 16px;
+  margin-top: 28px;
 }
 
 #home.page .home-hero {
@@ -63,6 +64,7 @@
 
 #home.page .home-subtitle {
   max-width: 540px;
+  margin-bottom: 8px;
   line-height: 1.55;
 }
 
@@ -117,8 +119,9 @@
 #home.page .home-countdown {
   width: 100%;
   max-width: none;
-  margin: 14px 0 0;
-  padding: 22px;
+  margin: 28px 0 0;
+  padding: 28px 26px;
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -287,10 +290,17 @@
 @media (max-width: 640px) {
   #home.page .home-actions {
     flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
   }
 
   #home.page .home-btn {
     width: 100%;
+  }
+
+  #home.page .home-countdown {
+    margin-top: 24px;
+    padding: 24px 18px;
   }
 }
 

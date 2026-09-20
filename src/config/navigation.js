@@ -5,11 +5,3 @@ export const PAGE_IDS = [
   "galeri",
   "favorit"
 ];
-
-export const PAGE_COMPONENTS = {
-  home: "HomePage",
-  struktur: "StructurePage",
-  anggota: "MembersPage",
-  galeri: "MemoriesPage",
-  favorit: "FavoritesPage"
-};

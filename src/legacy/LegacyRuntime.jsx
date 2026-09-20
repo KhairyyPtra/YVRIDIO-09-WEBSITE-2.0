@@ -875,7 +875,7 @@ const playlist = [
     title: "Dan",
     artist: "Sheila On 7",
     src:
-      "assets/music/Sheila On 7 - Dan... Lirik Lagu.mp3"
+      "assets/music/Sheila On 7 – Dan... Lirik Lagu.mp3"
   },
 
   {
@@ -897,24 +897,7 @@ const playlist = [
     artist: "Coldplay",
     src:
       "assets/music/Coldplay - Fix You (Lyrics).mp3"
-  },
-  // ==================================================
-  // TAMBAHKAN LAGU BERIKUTNYA DI SINI
-  // ==================================================
-
-  /*
-  {
-    title: "Lagu Kedua",
-    artist: "Nama Artis",
-    src: "assets/music/lagu-kedua.mp3"
-  },
-
-  {
-    title: "Lagu Ketiga",
-    artist: "Nama Artis",
-    src: "assets/music/lagu-ketiga.mp3"
   }
-  */
 ];
 
 
