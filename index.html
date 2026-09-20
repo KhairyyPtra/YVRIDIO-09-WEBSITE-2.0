@@ -8,7 +8,7 @@
   <title>YVRIDIO'09 — Satu Kelas, Satu Orbit</title>
 
   <meta name="description" content="YVRIDIO'09 — satu kelas, satu orbit, satu cerita. Kenangan, anggota, dan perjalanan yang tak akan hilang.">
-  <meta name="theme-color" content="#020617">
+  <meta name="theme-color" content="#f4f6f8">
   <meta name="author" content="YVRIDIO'09">
 
   <meta property="og:type" content="website">
@@ -30,7 +30,22 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      background: #f4f6f8;
+    }
+
+    html:not(.app-ready) body > *:not(#react-root),
+    html:not(.app-ready) #react-root {
+      visibility: hidden;
+    }
+
+    #loading-screen,
+    #kenangan-warp {
+      display: none !important;
+    }
+  </style>
+
 </head>
 
 <body class="dark">
@@ -391,17 +406,17 @@
         <div class="home-content">
 
           <span class="home-eyebrow">
-            ✦ YVRIDIO'09 • EST. 2025 ✦
+            YVRIDIO'09 / CLASS DASHBOARD
           </span>
 
           <h2>
-            OUR LITTLE<br>
-            <span>UNIVERSE</span>
+            Satu kelas,<br>
+            <span>satu cerita.</span>
           </h2>
 
           <p class="home-subtitle">
-            Satu kelas, satu perjalanan,<br>
-            satu cerita yang tidak akan hilang.
+            Pusat ringkasan untuk anggota, arsip kenangan,
+            dan perjalanan YVRIDIO'09.
           </p>
 
 
@@ -419,7 +434,7 @@
           <div class="home-quote">
 
             <h3 id="quote-title">
-              Quotes of the Day
+              Catatan hari ini
             </h3>
 
             <p id="random-quote">
@@ -463,7 +478,7 @@
 
               <span>✦</span>
 
-              MENUJU MASA DEPAN
+              AGENDA BERIKUTNYA
 
               <span>✦</span>
 
@@ -482,7 +497,7 @@
             </div>
 
             <p>
-              The next chapter is waiting.
+              Waktu berjalan, cerita tetap tersimpan.
             </p>
 
           </div>
@@ -497,7 +512,7 @@
 
               <span>🌌</span>
 
-              Lihat Kenangan
+              Buka Arsip Kenangan
 
             </button>
 
@@ -509,13 +524,58 @@
 
               <span>👨🏻‍🎓</span>
 
-              Kenali Anggota
+              Lihat Anggota
 
             </button>
 
           </div>
 
         </div>
+
+      <aside class="home-dashboard-panel" aria-label="Ringkasan sistem">
+
+        <div class="dashboard-panel-header">
+          <span class="dashboard-kicker">SYSTEM STATUS</span>
+          <span class="dashboard-status"><i></i> ONLINE</span>
+        </div>
+
+        <div class="dashboard-panel-line"></div>
+
+        <div class="dashboard-status-list">
+          <div class="dashboard-status-item">
+            <span class="dashboard-status-index">01</span>
+            <div>
+              <strong>Classroom archive</strong>
+              <span>Arsip kenangan siap dijelajahi</span>
+            </div>
+            <b>Ready</b>
+          </div>
+
+          <div class="dashboard-status-item">
+            <span class="dashboard-status-index">02</span>
+            <div>
+              <strong>Crew directory</strong>
+              <span>Daftar anggota YVRIDIO'09</span>
+            </div>
+            <b>34</b>
+          </div>
+
+          <div class="dashboard-status-item">
+            <span class="dashboard-status-index">03</span>
+            <div>
+              <strong>Shared timeline</strong>
+              <span>Satu perjalanan, banyak cerita</span>
+            </div>
+            <b>Active</b>
+          </div>
+        </div>
+
+        <div class="dashboard-panel-footer">
+          <span>LAST CHECK</span>
+          <strong>YVRIDIO'09 / ACTIVE</strong>
+        </div>
+
+      </aside>
 
       </div>
 
@@ -533,7 +593,7 @@
             <strong>34</strong>
 
             <span>
-              MEMBERS
+              ANGGOTA AKTIF
             </span>
 
           </div>
@@ -552,7 +612,7 @@
             <strong>287</strong>
 
             <span>
-              MEMORIES
+              ARSIP KENANGAN
             </span>
 
           </div>
@@ -571,7 +631,7 @@
             <strong>1</strong>
 
             <span>
-              CLASSROOM
+              SATU KELAS
             </span>
 
           </div>
@@ -584,7 +644,7 @@
       <div class="home-social">
 
         <span>
-          FIND US
+          HUBUNGI KAMI
         </span>
 
         <a
@@ -615,7 +675,7 @@
         </p>
 
         <span>
-          WE WERE AN ORBIT.
+           WE WERE ONE STORY.
         </span>
 
         <div class="home-ending-line"></div>
@@ -715,7 +775,7 @@
             <div>
 
               <strong>
-                8
+                9
               </strong>
 
               <span>
@@ -1165,6 +1225,40 @@
 
             </div>
 
+
+            <!-- KEBERSIHAN -->
+
+            <div class="tree-card department-card">
+
+              <div class="department-top">
+
+                <div class="department-icon">
+                  🧹
+                </div>
+
+                <span class="department-number">
+                  07
+                </span>
+
+              </div>
+
+
+              <span>
+                KEBERSIHAN
+              </span>
+
+
+              <h4>
+                Mutia Dwi Mutmainah
+              </h4>
+
+
+              <small>
+                Menjaga kebersihan & kenyamanan kelas
+              </small>
+
+            </div>
+
           </div>
 
         </div>
@@ -1461,7 +1555,7 @@
 
 
           <div class="anggota-card" data-name="Dinda Keisha Rohaendi" onclick="openMemberDetail(this)" tabindex="0">
-            <img src="assets/images/anggota/anonim.jpeg" alt="Dinda Keisha Rohaendi">
+            <img src="assets/images/anggota/dinda.jpeg" alt="Dinda Keisha Rohaendi">
             <h4>Dinda Keisha Rohaendi</h4>
             <div class="bio">Dinda | Kendari, 5 November 2009</div>
           </div>
@@ -1517,14 +1611,14 @@
 
 
           <div class="anggota-card" data-name="Isma Apriyanti" onclick="openMemberDetail(this)" tabindex="0">
-            <img src="assets/images/anggota/anonim.jpeg" alt="Isma Apriyanti">
+            <img src="assets/images/anggota/isma.jpeg" alt="Isma Apriyanti">
             <h4>Isma Apriyanti</h4>
             <div class="bio">Isma | Kendari, 7 September 2009</div>
           </div>
 
 
           <div class="anggota-card" data-name="Janita Fajriyani" onclick="openMemberDetail(this)" tabindex="0">
-            <img src="assets/images/anggota/anonim.jpeg" alt="Janita Fajriyani">
+            <img src="assets/images/anggota/janita.jpeg" alt="Janita Fajriyani">
             <h4>Janita Fajriyani</h4>
             <div class="bio">Janita | Konawe Selatan, 4 Januari 2009</div>
           </div>
@@ -1601,7 +1695,7 @@
 
 
           <div class="anggota-card" data-name="Andi Idham Pratama" onclick="openMemberDetail(this)" tabindex="0">
-            <img src="assets/images/anggota/anonim.jpeg" alt="Andi Idham Pratama">
+            <img src="assets/images/anggota/idham.jpeg" alt="Andi Idham Pratama">
             <h4>Andi Idham Pratama</h4>
             <div class="bio">Idham | Kendari, 3 Desember 2009</div>
           </div>
@@ -3302,188 +3396,12 @@
 
 
   <!-- ========================================= -->
-  <!-- MEMBER DETAIL SCRIPT -->
-  <!-- ========================================= -->
-
-  <script>
-
-    function openMemberDetail(card) {
-
-      const modal =
-        document.getElementById("member-detail-modal");
-
-      const image =
-        card.querySelector("img");
-
-      const name =
-        card.querySelector("h4");
-
-      const bio =
-        card.querySelector(".bio");
-
-
-      if (!modal || !name || !bio) {
-        return;
-      }
-
-
-      const fullName =
-        name.textContent.trim();
-
-      const bioText =
-        bio.textContent.trim();
-
-
-      const parts =
-        bioText.split("|");
-
-
-      const nickname =
-        parts[0]
-          ? parts[0].trim()
-          : "-";
-
-
-      const birth =
-        parts[1]
-          ? parts[1].trim()
-          : "-";
-
-
-      document.getElementById(
-        "member-detail-photo"
-      ).src = image.src;
-
-
-      document.getElementById(
-        "member-detail-photo"
-      ).alt = fullName;
-
-
-      document.getElementById(
-        "member-detail-name"
-      ).textContent = fullName;
-
-
-      document.getElementById(
-        "member-detail-nickname"
-      ).textContent = nickname;
-
-
-      document.getElementById(
-        "member-detail-birth"
-      ).textContent = birth;
-
-
-      modal.classList.add("active");
-
-      modal.setAttribute(
-        "aria-hidden",
-        "false"
-      );
-
-
-      document.body.classList.add(
-        "member-modal-open"
-      );
-
-    }
-
-
-    function closeMemberDetail() {
-
-      const modal =
-        document.getElementById(
-          "member-detail-modal"
-        );
-
-
-      if (!modal) {
-        return;
-      }
-
-
-      modal.classList.remove("active");
-
-      modal.setAttribute(
-        "aria-hidden",
-        "true"
-      );
-
-
-      document.body.classList.remove(
-        "member-modal-open"
-      );
-
-    }
-
-
-    document.addEventListener(
-      "keydown",
-      function(event) {
-
-        if (
-          event.key === "Escape"
-        ) {
-
-          const modal =
-            document.getElementById(
-              "member-detail-modal"
-            );
-
-
-          if (
-            modal &&
-            modal.classList.contains("active")
-          ) {
-
-            closeMemberDetail();
-
-          }
-
-        }
-
-      }
-    );
-
-
-    document.addEventListener(
-      "keydown",
-      function(event) {
-
-        const card =
-          event.target.closest(
-            ".anggota-card"
-          );
-
-
-        if (!card) {
-          return;
-        }
-
-
-        if (
-          event.key === "Enter" ||
-          event.key === " "
-        ) {
-
-          event.preventDefault();
-
-          openMemberDetail(card);
-
-        }
-
-      }
-    );
-
-  </script>
-
-
-  <!-- ========================================= -->
   <!-- MAIN JAVASCRIPT -->
   <!-- ========================================= -->
 
-  <script src="script.js"></script>
+  <div id="react-root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
 
 </body>
 

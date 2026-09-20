@@ -1,0 +1,50 @@
+.ui-icon {
+  display: inline-flex;
+  width: 1.05em;
+  height: 1.05em;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -0.16em;
+  line-height: 1;
+}
+
+.ui-icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+.menu-icon .ui-icon,
+.home-btn .ui-icon,
+.home-info-icon .ui-icon,
+.department-icon .ui-icon,
+.structure-card-icon .ui-icon,
+.detail-icon .ui-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.menu-icon .ui-icon {
+  color: var(--cyan);
+}
+
+.home-btn .ui-icon,
+.home-info-icon .ui-icon {
+  color: currentColor;
+}
+
+.modal-nav .ui-icon,
+.modal-close .ui-icon,
+.close-menu .ui-icon,
+.music-btn .ui-icon,
+.mini-ctrl .ui-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.memory-fav-btn .ui-icon,
+.to-favorit-icon .ui-icon {
+  width: 1em;
+  height: 1em;
+}

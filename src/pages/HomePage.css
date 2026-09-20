@@ -1,0 +1,323 @@
+#home.page .home-section {
+  min-height: 100svh;
+  isolation: isolate;
+  padding-bottom: clamp(48px, 8vw, 96px);
+}
+
+#home.page .home-content,
+#home.page .home-info,
+#home.page .home-social,
+#home.page .home-ending {
+  position: relative;
+  z-index: 1;
+}
+
+#home.page .home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+#home.page .home-hero {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  align-items: stretch;
+  gap: clamp(18px, 3vw, 32px);
+  padding-inline: 0;
+}
+
+#home.page .home-stars {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#home.page .home-content {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: 18px;
+}
+
+#home.page .home-eyebrow,
+#home.page .home-content h2,
+#home.page .home-subtitle,
+#home.page .home-divider {
+  text-align: left;
+}
+
+#home.page .home-content h2 {
+  max-width: 680px;
+  margin: 18px 0 16px;
+  font-size: clamp(2.9rem, 6vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+#home.page .home-subtitle {
+  max-width: 540px;
+  line-height: 1.55;
+}
+
+#home.page .home-divider {
+  margin: 24px 0;
+  max-width: 270px;
+}
+
+#home.page .home-quote {
+  width: 100%;
+  max-width: none;
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  text-align: left;
+  border-radius: 14px;
+  box-shadow: none;
+  overflow: visible;
+}
+
+#home.page .home-quote::before,
+#home.page .home-quote::after {
+  display: none;
+}
+
+#home.page .home-quote h3 {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#home.page .home-quote p {
+  max-width: 58ch;
+  color: var(--paper);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.14rem);
+  font-style: normal;
+  line-height: 1.5;
+}
+
+#home.page .home-quote .quote-source {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted-soft);
+  font-size: 0.76rem;
+  text-align: left;
+}
+
+#home.page .home-countdown {
+  width: 100%;
+  max-width: none;
+  margin: 14px 0 0;
+  padding: 22px;
+  text-align: left;
+}
+
+#home.page .home-countdown .countdown-label,
+#home.page .home-countdown h3,
+#home.page .home-countdown p,
+#home.page .home-countdown .countdown-time {
+  text-align: left;
+}
+
+#home.page .home-countdown .countdown-time {
+  margin-inline: 0;
+}
+
+#home.page .home-info {
+  width: min(100%, 760px);
+  margin: -32px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  position: relative;
+  z-index: 3;
+}
+
+#home.page .home-info-card {
+  min-height: 86px;
+  padding: 16px;
+}
+
+#home.page .home-orbit {
+  display: none;
+}
+
+#home.page .home-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 16px;
+  margin-top: 54px;
+}
+
+#home.page .home-social a {
+  color: var(--cyan);
+}
+
+#home.page .home-ending {
+  margin-top: 52px;
+}
+
+#home.page .home-dashboard-panel {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: clamp(22px, 3vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(11, 23, 40, 0.8);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#home.page .dashboard-panel-header,
+#home.page .dashboard-panel-footer,
+#home.page .dashboard-status-item {
+  display: flex;
+  align-items: center;
+}
+
+#home.page .dashboard-panel-header,
+#home.page .dashboard-panel-footer {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#home.page .dashboard-kicker,
+#home.page .dashboard-panel-footer span,
+#home.page .dashboard-status {
+  color: var(--cyan);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+#home.page .dashboard-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+#home.page .dashboard-status i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan-strong);
+  box-shadow: 0 0 0 4px rgba(82, 190, 200, 0.12);
+}
+
+#home.page .dashboard-panel-line {
+  height: 1px;
+  margin: 22px 0 8px;
+  background: var(--line);
+}
+
+#home.page .dashboard-status-list {
+  display: grid;
+  gap: 0;
+  flex: 1;
+}
+
+#home.page .dashboard-status-item {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+#home.page .dashboard-status-index {
+  color: var(--amber);
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+
+#home.page .dashboard-status-item strong,
+#home.page .dashboard-status-item > div span {
+  display: block;
+}
+
+#home.page .dashboard-status-item strong {
+  color: var(--paper);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#home.page .dashboard-status-item > div span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+#home.page .dashboard-status-item b {
+  color: var(--cyan);
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+#home.page .dashboard-panel-footer {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+#home.page .dashboard-panel-footer strong {
+  color: var(--muted);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+  #home.page .home-actions {
+    flex-direction: column;
+  }
+
+  #home.page .home-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  #home.page .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  #home.page .home-dashboard-panel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #home.page .home-content h2 {
+    font-size: clamp(2.7rem, 14vw, 4.5rem);
+  }
+
+  #home.page .home-info {
+    margin-top: 18px;
+  }
+
+  #home.page .dashboard-status-item {
+    grid-template-columns: 24px minmax(0, 1fr);
+  }
+
+  #home.page .dashboard-status-item b {
+    grid-column: 2;
+  }
+}

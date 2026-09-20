@@ -1,0 +1,46 @@
+#anggota.page .members-section {
+  min-height: 100svh;
+  isolation: isolate;
+  padding-bottom: clamp(48px, 8vw, 96px);
+}
+
+#anggota.page .members-content,
+#anggota.page .members-directory {
+  position: relative;
+  z-index: 1;
+}
+
+#anggota.page .anggota-grid {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+  gap: 16px;
+}
+
+#anggota.page .anggota-card {
+  min-width: 0;
+  cursor: pointer;
+}
+
+#anggota.page .members-directory {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+}
+
+#anggota.page .members-heading {
+  margin-bottom: 28px;
+}
+
+#anggota.page .anggota-card h4 {
+  min-height: 2.8em;
+  color: var(--paper);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.35;
+}
+
+#anggota.page .anggota-card .bio {
+  color: var(--muted);
+  font-size: 0.78rem;
+}

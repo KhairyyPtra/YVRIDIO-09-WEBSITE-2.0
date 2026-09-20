@@ -39,13 +39,13 @@ body {
 }
 
 .stars {
-  background-image: url("assets/images/bg/background1.jfif");
+  background-image: url("/assets/images/bg/background1.jfif");
   background-size: cover;
   animation-duration: 200s;
 }
 
 .stars2 {
-  background-image: url("assets/images/bg/background2.jfif");
+  background-image: url("/assets/images/bg/background2.jfif");
   background-size: cover;
   animation-duration: 300s;
   opacity: 0.35;

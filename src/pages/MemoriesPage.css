@@ -1,0 +1,40 @@
+#galeri.page .memory-section {
+  min-height: 100svh;
+  isolation: isolate;
+  padding-bottom: clamp(48px, 8vw, 96px);
+}
+
+#galeri.page .memory-content,
+#galeri.page .gallery-heading,
+#galeri.page .gallery-actions,
+#galeri.page #memoryGallery,
+#galeri.page .memory-ending {
+  position: relative;
+  z-index: 1;
+}
+
+#galeri.page #memoryGallery {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+  gap: 14px;
+}
+
+#galeri.page .memory-card.memory-hidden {
+  display: none;
+}
+
+#galeri.page .memory-hero {
+  display: grid;
+  place-items: center;
+}
+
+#galeri.page .memory-load-more-wrap {
+  margin-top: 28px;
+  text-align: center;
+}
+
+#galeri.page .memory-ending {
+  margin-top: 64px;
+}

@@ -357,7 +357,7 @@ function randomQuote() {
   if (quoteTitle) {
 
     quoteTitle.innerText =
-      "Quotes of the Day";
+      "Catatan hari ini";
   }
 
   const randomIndex =
@@ -2394,7 +2394,7 @@ const MONTH_MAP = {
 
 /** Data ulang tahun dari bio anggota (hari + bulan saja). */
 const MEMBER_BIRTHDAYS = [
-  { name: "Zafran Khairy Marwan Putra", nick: "Zafran", day: 22, month: 8 },
+  { name: "Zafran Khairy Marwan Putra", nick: "Zafran", day: 6, month: 8 },
   { name: "Muhammad Khoirul Fahmi", nick: "Fahmi", day: 22, month: 10 },
   { name: "Gerindra Onata Osta Oswada Pracoyo", nick: "Geri", day: 3, month: 5 },
   { name: "Fazly Al-Fattah Ilin", nick: "Fazly", day: 8, month: 4 },
@@ -2429,8 +2429,6 @@ const MEMBER_BIRTHDAYS = [
   { name: "Iqro Saputri", nick: "Iqro", day: 10, month: 7 },
   { name: "Raudhatul Jannah", nick: "Raudha", day: 29, month: 11 }
 ];
-
-const BIRTHDAY_NOTIF_KEY = "yvridioBirthdayNotifDate";
 
 function getTodayBirthdays() {
   const now = new Date();
@@ -2477,197 +2475,6 @@ function renderHomeBirthday() {
   });
 }
 
-function getBirthdayNotifBody(people) {
-  if (people.length === 1) {
-    return `Hari ini ulang tahun ${people[0].nick}! 🎂\nYVRIDIO'09 — One class. One orbit. One story.`;
-  }
-
-  const names = people.map((p) => p.nick).join(", ");
-  return `Hari ini ulang tahun: ${names}! 🎂\nYVRIDIO'09 — One class. One orbit. One story.`;
-}
-
-function todayDateKey() {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-}
-
-function alreadyNotifiedToday() {
-  return localStorage.getItem(BIRTHDAY_NOTIF_KEY) === todayDateKey();
-}
-
-function markNotifiedToday() {
-  localStorage.setItem(BIRTHDAY_NOTIF_KEY, todayDateKey());
-}
-
-/**
- * VAPID PUBLIC KEY — harus sama dengan VAPID_PUBLIC_KEY di server (Vercel env).
- * Private key JANGAN pernah ditaruh di frontend.
- *
- * Generate ulang: npm run vapid
- * Lalu update key ini + env Vercel.
- */
-const VAPID_PUBLIC_KEY =
-  "BItqg9sfoto6HCyOM4jgmjDsgATkQ-MbqBSLG2rUOXBl819UttXJSecFw0g58_IUtkX_T_VdsRIDbHwsLIxrbFQ";
-
-function urlBase64ToUint8Array(base64String) {
-  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
-  const base64 = (base64String + padding)
-    .replace(/-/g, "+")
-    .replace(/_/g, "/");
-  const raw = atob(base64);
-  const arr = new Uint8Array(raw.length);
-  for (let i = 0; i < raw.length; i++) {
-    arr[i] = raw.charCodeAt(i);
-  }
-  return arr;
-}
-
-/**
- * Minta izin notifikasi segera setelah site dibuka (bukan nunggu ultah).
- */
-async function ensureNotificationPermission() {
-  if (!("Notification" in window)) return "unsupported";
-
-  if (Notification.permission === "granted") return "granted";
-  if (Notification.permission === "denied") return "denied";
-
-  try {
-    const result = await Notification.requestPermission();
-    return result;
-  } catch (e) {
-    console.log("Gagal meminta izin notifikasi:", e);
-    return "error";
-  }
-}
-
-/**
- * Daftarkan Service Worker (wajib untuk Web Push di background).
- */
-async function registerServiceWorker() {
-  if (!("serviceWorker" in navigator)) {
-    return null;
-  }
-
-  try {
-    const reg = await navigator.serviceWorker.register("/sw.js", {
-      scope: "/"
-    });
-    await navigator.serviceWorker.ready;
-    return reg;
-  } catch (e) {
-    console.log("Service Worker gagal didaftarkan:", e);
-    return null;
-  }
-}
-
-/**
- * Subscribe Web Push + kirim subscription ke server.
- * Setelah ini, server bisa kirim notif meski tab tertutup.
- */
-async function subscribeWebPush() {
-  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
-    return null;
-  }
-
-  if (Notification.permission !== "granted") {
-    return null;
-  }
-
-  try {
-    const reg = await navigator.serviceWorker.ready;
-
-    let subscription = await reg.pushManager.getSubscription();
-
-    if (!subscription) {
-      subscription = await reg.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
-      });
-    }
-
-    // Simpan di server (Upstash via /api/subscribe)
-    try {
-      await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(subscription.toJSON())
-      });
-    } catch (e) {
-      console.log("Gagal mengirim subscription ke server:", e);
-    }
-
-    return subscription;
-  } catch (e) {
-    console.log("Subscribe Web Push gagal:", e);
-    return null;
-  }
-}
-
-/**
- * Notifikasi lokal saat website sedang dibuka (cadangan).
- * Push server yang mengurus notif di background.
- */
-async function sendBirthdayNotification() {
-  const people = getTodayBirthdays();
-  if (people.length === 0) return;
-
-  if (!("Notification" in window)) return;
-  if (alreadyNotifiedToday()) return;
-  if (Notification.permission !== "granted") return;
-
-  const title =
-    people.length === 1
-      ? `🎂 Selamat ulang tahun, ${people[0].nick}!`
-      : `🎂 ${people.length} teman ulang tahun hari ini!`;
-
-  try {
-    // Preferensi: lewat Service Worker (lebih konsisten di mobile)
-    if ("serviceWorker" in navigator) {
-      const reg = await navigator.serviceWorker.ready;
-      await reg.showNotification(title, {
-        body: getBirthdayNotifBody(people),
-        icon: "assets/images/favicon.png",
-        badge: "assets/images/favicon-32.png",
-        tag: "yvridio-birthday-" + todayDateKey(),
-        data: { url: "/" }
-      });
-    } else {
-      const n = new Notification(title, {
-        body: getBirthdayNotifBody(people),
-        icon: "assets/images/favicon.png",
-        badge: "assets/images/favicon-32.png",
-        tag: "yvridio-birthday-" + todayDateKey()
-      });
-      n.onclick = () => {
-        window.focus();
-        if (typeof showPage === "function") showPage("home");
-        n.close();
-      };
-    }
-
-    markNotifiedToday();
-  } catch (e) {
-    console.log("Notifikasi ulang tahun gagal:", e);
-  }
-}
-
-function initBirthdayFeature() {
-  renderHomeBirthday();
-
-  // Setelah loading:
-  // 1) register SW
-  // 2) minta izin notifikasi
-  // 3) subscribe Web Push (supaya notif bisa di background)
-  // 4) kalau ada ultah hari ini → notif lokal juga
-  setTimeout(async () => {
-    await registerServiceWorker();
-    await ensureNotificationPermission();
-    await subscribeWebPush();
-    await sendBirthdayNotification();
-  }, 4200);
-}
-
-
 // ======================================================
 // 20. WEBSITE STARTUP
 // ======================================================
@@ -2701,7 +2508,7 @@ window.addEventListener(
     // ULANG TAHUN
     // ==================================================
 
-    initBirthdayFeature();
+    renderHomeBirthday();
 
 
     // ==================================================
@@ -2760,7 +2567,8 @@ window.addEventListener(
     // LOADING SCREEN
     // ==================================================
 
-    runLoadingSequence();
+    document.getElementById("loading-screen")?.remove();
+    document.getElementById("kenangan-warp")?.remove();
   }
 );
 
@@ -3580,5 +3388,31 @@ function toggleModalFavorite() {
     updateModalPhoto();
   }
 }
+
+// Transitional bridge for the legacy markup while each page moves to React.
+Object.assign(window, {
+  showPage,
+  activatePage,
+  toggleMenu,
+  closeMenu,
+  sortMembers,
+  openModal,
+  closeModal,
+  previousPhoto,
+  nextPhoto,
+  toggleModalFavorite,
+  shuffleMemories,
+  loadMoreMemories,
+  toggleOrbitRandom,
+  openMemberDetail,
+  closeMemberDetail,
+  scrollToTop,
+  previousSong,
+  toggleMusic,
+  nextSong,
+  toggleMusicPlayer,
+  closeMusicPlayer,
+  clearAllFavorites
+});
 
 
